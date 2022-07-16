@@ -1,0 +1,17 @@
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+button{
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+div{
+    border: 1px solid green;
+    text-align: center;
+}
