@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Heads or Tails</title>
     <link rel="stylesheet" href="./style.css">
-
 </head>
-
 <body>
-
-    <div id="main">
-
-        <div>
-            <h1 id="user1">User 1</h1>
+    <p id="heading">Heads or Tails</p>
+    <p id="timer" class="timer">Time Left: </p>
+    <div class="main">
+        <div class="sub">
+            <h1 id="user1">Player 1</h1>
             <img src="./assets/avatar3.png" />
             <h2 id="user1score">Score:</h2>
         </div>
-        <div>
-
-            <h1 id="user2">User 2</h1>
+        <div class="sub">
+            <h1 id="user2">Player 2</h1>
             <img src="./assets/avatar5.png" />
             <h2 id="user2score">Score:</h2>
         </div>
-        <br /><br />
-
-        <button onClick="headOrTail()">Head or Tail</button>
+        <button onClick="headOrTail()">Heads or Tails</button>
         <button onClick="resetGame()">Reset</button>
+        <p id="headtail"></p>
     </div>
-
-
-
-
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Heads or Tails - Result</h2>
+            </div>
+            <div class="modal-body">
+                <p id="modal-body"></p>
+            </div>
+            <div class="modal-footer">
+                <h3>Prepared by: Nasir Raza</h3>
+            </div>
+        </div>
+    </div>
     <script src="app.js"></script>
-
 </body>
-
 </html>
