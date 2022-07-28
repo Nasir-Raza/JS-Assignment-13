@@ -52,14 +52,14 @@ function resetGame() {
     user1 = Math.floor(Math.random() * (1 + 1));
     if (user1 === 0) {
         console.log("user1 -> Head");
-        document.getElementById("user1").innerText = "Player 1 - Head"
+        document.getElementById("user1").innerText = "Player 1 - Heads"
         user2 = 1;
-        document.getElementById("user2").innerText = "Player 2 - Tail"
+        document.getElementById("user2").innerText = "Player 2 - Tails"
     }
     else {
-        document.getElementById("user1").innerText = "Player 1 - Tail"
+        document.getElementById("user1").innerText = "Player 1 - Tails"
         user2 = 0;
-        document.getElementById("user2").innerText = "Player 2 - Head"
+        document.getElementById("user2").innerText = "Player 2 - Heads"
         console.log("user1 -> Tail");
     }
     timerStop();
